@@ -29,7 +29,7 @@ To do before wrecking of self.
 
 ### Workflow Applications
 
-* iTerm 2*
+* iTerm 2
 * Powerline*
 * Sublime Text 3
 * Pushbullet
