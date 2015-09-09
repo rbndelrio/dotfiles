@@ -1,0 +1,87 @@
+{
+	"color_scheme": "Packages/Theme - Afterglow/Afterglow-monokai.tmTheme",
+	"extra_file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db"
+	],
+	"extra_folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"node_modules",
+		".sass-cache"
+	],
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"/Users/rdelrio/Documents/Projects/millers-all-american-summer/build/.DS_Store",
+		"/Users/rdelrio/Documents/Projects/millers-all-american-summer/.DS_Store",
+		"/Users/rdelrio/Documents/Projects/millers-all-american-summer/build/img/.DS_Store",
+		"/Users/rdelrio/Documents/Projects/millers-all-american-summer/build/index.html",
+		"/Users/rdelrio/Documents/Projects/millers-all-american-summer/src/sass/.DS_Store",
+		"/Users/rdelrio/Documents/Projects/millers-all-american-summer/src/.DS_Store"
+	],
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"/Users/rdelrio/Documents/Projects/millers-all-american-summer/.sass-cache",
+		"/Users/rdelrio/Documents/Projects/millers-all-american-summer/build/min",
+		"/Users/rdelrio/Documents/Projects/millers-all-american-summer/node_modules",
+		"/Users/rdelrio/Documents/Projects/millers-all-american-summer/build/css",
+		"node_modules",
+		".sass-cache"
+	],
+	"font_size": 12.0,
+	"ignored_packages":
+	[
+		"Gitignored File Excluder",
+		"Vintage",
+		"Color Highlighter"
+	],
+	"status_bar_brighter": true,
+	"tabs_padding_small": true,
+	"tabs_small": true,
+	"theme": "Afterglow.sublime-theme",
+	"translateTabsToSpaces": true
+}

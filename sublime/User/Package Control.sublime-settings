@@ -1,0 +1,32 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Color Highlighter",
+		"CSScomb",
+		"Emmet",
+		"Emmet Css Snippets",
+		"Git",
+		"GitGutter",
+		"Gitignored File Excluder",
+		"HTML5",
+		"HTMLBeautify",
+		"Insert Nums",
+		"JSHint",
+		"LESS",
+		"Markdown Extended",
+		"Minify",
+		"Package Control",
+		"SASS Snippets",
+		"SassBeautify",
+		"Siteleaf Liquid Syntax",
+		"Syntax Highlighting for Sass",
+		"Text Pastry",
+		"Theme - Afterglow",
+		"Theme - Spacegray",
+		"Twig",
+		"TypeScript"
+	]
+}

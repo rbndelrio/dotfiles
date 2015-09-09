@@ -1,0 +1,47 @@
+[core]
+	editor = subl -n -w
+[push]
+	default = simple
+[user]
+	name = Ruben Del Rio
+	email = rdelrio@pushhere.com
+[web]
+	browser = google-chrome
+[instaweb]
+	httpd = apache2 -f
+[color]
+	ui = true
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[status]
+	short = true
+	branch = true
+[rerere]
+	enabled = true
+	autoupdate = true
+# Lets git remember how merge conflicts are solved
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+
+
+[alias]
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  graph = log --graph --decorate --oneline
+  overview = log --graph --oneline --decorate --all
+  mg = merge --no-ff
+
+  type = cat-file -t
+  dump = cat-file -p
