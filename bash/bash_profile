@@ -69,6 +69,3 @@ export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
-# git for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short) %(contents:subject)' refs/heads/ 
-# for ref in $(git for-each-ref --sort=-committerdate refs/heads/ --format='%(refname:short) %(contents:subject)'); do git log -n1 $ref | cat ; done | awk '! a[$0]++'
-# for ref in $(git for-each-ref --sort=-committerdate --format="%(refname:short)" refs/heads/ ); do git log -n1 $ref --pretty=format:"%Cgreen%cr%Creset %C(yellow)%d%Creset %C(bold blue)<%an>%Creset%n" | cat ; done | awk '! a[$0]++'
