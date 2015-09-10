@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for BRANCH in $(git branch git branch --merged | grep -v master | grep -v stage | grep -v test); do 
+    git branch -d $BRANCH
+done;

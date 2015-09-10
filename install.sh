@@ -16,6 +16,7 @@ ln -s "$PWD/merc/hgrc" ~/.hgrc
 echo Symlinking bin files...
 rm -rf ~/bin/git-deploy ~/bin/subl
 ln -s "$PWD/git/git-deploy" ~/bin/git-deploy
+ln -s "$PWD/git/git-cleanup" ~/bin/git-cleanup
 ln -s "$PWD/bin/subl" ~/bin/subl
 
 
