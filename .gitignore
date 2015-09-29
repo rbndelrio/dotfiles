@@ -1,0 +1,16 @@
+*/*.last-run
+*/*.ca-list
+*/*.ca-bundle
+*/*.system-ca-bundle
+*/*.ca-certs/
+*/*.merged-ca-bundle
+*.cache
+*/*.cache/
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+
+Package Control.sublime-settings
+Package Control.merged-ca-bundle
+Package Control.sublime-settings
+Package Control.system-ca-bundle

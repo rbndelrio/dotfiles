@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/Theme - Afterglow/Afterglow-monokai.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Afterglow-monokai (SL).tmTheme",
 	"extra_file_exclude_patterns":
 	[
 		"*.pyc",
@@ -52,12 +52,30 @@
 		"*.class",
 		"*.psd",
 		"*.db",
-		"/Users/rdelrio/Documents/Projects/millers-all-american-summer/build/.DS_Store",
-		"/Users/rdelrio/Documents/Projects/millers-all-american-summer/.DS_Store",
-		"/Users/rdelrio/Documents/Projects/millers-all-american-summer/build/img/.DS_Store",
-		"/Users/rdelrio/Documents/Projects/millers-all-american-summer/build/index.html",
-		"/Users/rdelrio/Documents/Projects/millers-all-american-summer/src/sass/.DS_Store",
-		"/Users/rdelrio/Documents/Projects/millers-all-american-summer/src/.DS_Store"
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/vendor/autoload.php",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/plugins/advanced-custom-fields-pro/assets/css/.DS_Store",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/plugins/advanced-custom-fields-pro/pro/admin/.DS_Store",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/plugins/advanced-custom-fields-pro/assets/inc/.DS_Store",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/plugins/advanced-custom-fields-pro/admin/updates/.DS_Store",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/plugins/advanced-custom-fields-pro/fields/.DS_Store",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/.swp",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/themes/greatamericancookies/library/js/libs/.DS_Store",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/.env",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/.DS_Store",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/plugins/advanced-custom-fields-pro/forms/.DS_Store",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/plugins/advanced-custom-fields-pro/assets/inc/select2/.DS_Store",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/plugins/advanced-custom-fields-pro/assets/.DS_Store",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/plugins/advanced-custom-fields-pro/assets/js/.DS_Store",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/themes/greatamericancookies/library/images/.DS_Store",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/plugins/advanced-custom-fields-pro/admin/.DS_Store",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/plugins/advanced-custom-fields-pro/assets/inc/datepicker/.DS_Store",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/plugins/advanced-custom-fields-pro/.DS_Store",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/plugins/advanced-custom-fields-pro/pro/.DS_Store",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/themes/greatamericancookies/library/scss/.DS_Store",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/uploads/.DS_Store",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/plugins/advanced-custom-fields-pro/admin/views/.DS_Store",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/plugins/advanced-custom-fields-pro/lang/.DS_Store",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/plugins/advanced-custom-fields-pro/pro/assets/js/.DS_Store"
 	],
 	"folder_exclude_patterns":
 	[
@@ -65,23 +83,32 @@
 		".git",
 		".hg",
 		"CVS",
-		"/Users/rdelrio/Documents/Projects/millers-all-american-summer/.sass-cache",
-		"/Users/rdelrio/Documents/Projects/millers-all-american-summer/build/min",
-		"/Users/rdelrio/Documents/Projects/millers-all-american-summer/node_modules",
-		"/Users/rdelrio/Documents/Projects/millers-all-american-summer/build/css",
 		"node_modules",
-		".sass-cache"
+		".sass-cache",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/.sass-cache",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/upgrade",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/.vagrant",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/web/wp",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/themes/greatamericancookies/library/css",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/vendor/johnpbloch",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/vendor/composer",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/data",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/node_modules",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/themes/greatamericancookies/library/js/build",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/vendor/vlucas",
+		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/uploads/2015"
 	],
-	"font_size": 12.0,
+	"font_size": 14.0,
 	"ignored_packages":
 	[
-		"Gitignored File Excluder",
+		"Color Highlighter",
 		"Vintage",
-		"Color Highlighter"
+		"Gitignored File Excluder"
 	],
 	"status_bar_brighter": true,
 	"tabs_padding_small": true,
 	"tabs_small": true,
 	"theme": "Afterglow.sublime-theme",
-	"translateTabsToSpaces": true
+	"translateTabsToSpaces": true,
+	"typescript_plugin_tsc_version": "1.6.2"
 }

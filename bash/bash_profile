@@ -7,6 +7,11 @@ fi
 function cs () {
 	cd "$@" && ls -a
 }
+
+function project () {
+	open ~/Documents/Projects/1/$1
+}
+
 alias cl='cs'
 alias pj='cd ~/Documents/Projects && ls -d *'
 alias ed='subl'
@@ -16,7 +21,8 @@ alias status='git status -sb'
 alias git-merge='git merge --no-ff'
 alias fetch='git fetch && git branch -v'
 alias chrome='/usr/bin/open -a "/Applications/Google Chrome.app"'
-
+alias npmlist='npm list -g --depth=0'
+alias 1='project'
 
 # Git commands
 alias gs='git status '
