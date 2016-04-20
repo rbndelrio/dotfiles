@@ -23,6 +23,7 @@ alias fetch='git fetch && git branch -v'
 alias chrome='/usr/bin/open -a "/Applications/Google Chrome.app"'
 alias npmlist='npm list -g --depth=0'
 alias 1='project'
+alias composer='composer.phar'
 
 # Git commands
 alias gs='git status '
@@ -65,6 +66,14 @@ function deploy () {
 	git deploy $1
 }
 
+function pullout () {
+	git push
+	git checkout -
+}
+
+function undo () {
+	git reset --hard HEAD~1
+}
 
 function _update_ps1() {
 	export PS1="$(~/powerline-shell.py --cwd-only $? 2> /dev/null)"
@@ -75,3 +84,4 @@ export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

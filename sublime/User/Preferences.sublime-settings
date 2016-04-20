@@ -98,17 +98,17 @@
 		"/Users/rdelrio/Documents/Projects/great-american-cookies/vendor/vlucas",
 		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/uploads/2015"
 	],
-	"font_size": 14.0,
+	"font_size": 11,
 	"ignored_packages":
 	[
 		"Color Highlighter",
-		"Vintage",
-		"Gitignored File Excluder"
+		"Gitignored File Excluder",
+		"Vintage"
 	],
 	"status_bar_brighter": true,
 	"tabs_padding_small": true,
 	"tabs_small": true,
 	"theme": "Afterglow.sublime-theme",
 	"translateTabsToSpaces": true,
-	"typescript_plugin_tsc_version": "1.6.2"
+	"typescript_plugin_tsc_version": "1.7.3"
 }
