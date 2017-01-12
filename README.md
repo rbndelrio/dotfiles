@@ -21,10 +21,22 @@ To do before wrecking of self.
 * Ruby
 * Homebrew
 * Python
+* VirtualBox
+* Vagrant
+* Sequel Pro
+* Docker
+* Kitematic
+* Postgres/PSequel
+* VNC Viewer
 * Node
- * Gulp
- * Grunt
- * Browsersync
+ * npm-check-updates
+ * yarn
+ * gulp
+ * browsersync
+ * grunt-cli
+ * vue-cli
+ * foundation-cli
+ * webpack-dev-server
 
 
 ### Workflow Applications
@@ -32,21 +44,23 @@ To do before wrecking of self.
 * iTerm 2
 * Powerline*
 * Sublime Text 3
+* Visual Studio Code
 * Pushbullet
 * 1Password
 * Slack
 * Miro Video Converter
 * Handbrake
+* ImageOptim
 
-*TODO: Add settings to repo
+*Custom config found in my private fork of powerline
 
 
 ### Rice
 
 * MenuMeters
 * Spectacle
+* Numi
 * Bartender
-* ImageOptim
 * Flux
 * BetterTouchTool
 * cd to.app
