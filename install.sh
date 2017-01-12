@@ -3,10 +3,11 @@
 # General Config
 
 echo Cleaning dotfiles...
-rm -rf ~/.bash_profile ~/.profile ~/.gitconfig ~/.hgrc
+rm -rf ~/.bash_profile ~/.profile ~/.gitconfig ~/.hgrc ~/.tmux.conf
 echo Symlinking dotfiles...
 ln -s "$PWD/bash/bash_profile" ~/.bash_profile
 ln -s "$PWD/profile/profile" ~/.profile
+ln -s "$PWD/tmux/tmux.conf" ~/.tmux.conf
 ln -s "$PWD/git/gitconfig" ~/.gitconfig
 ln -s "$PWD/merc/hgrc" ~/.hgrc
 

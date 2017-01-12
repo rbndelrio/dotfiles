@@ -1,7 +1,9 @@
+	#editor = code -n -w
 [core]
 	editor = subl -n -w
+	excludesfile = /Users/rdelrio/.gitignore_global
 [push]
-	default = simple
+	default = current
 [user]
 	name = Ruben Del Rio
 	email = rdelrio@pushhere.com
@@ -26,7 +28,7 @@
 	untracked = cyan
 [status]
 	short = true
-	branch = true
+	branch = false #disabled because powerline already shows this
 [rerere]
 	enabled = true
 	autoupdate = true
@@ -42,6 +44,20 @@
   graph = log --graph --decorate --oneline
   overview = log --graph --oneline --decorate --all
   mg = merge --no-ff
+  please = push --force-with-lease
+
+  #stash 								# tracked files (staged + unstaged)
+  stsh = stash --keep-index				# tracked files (unstaged)
+  staash = stash --include-untracked	# tracked + untracked files
+  staaash = stash --all					# tracked + untracked + ignored files
 
   type = cat-file -t
   dump = cat-file -p
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/rdelrio/.stCommitMsg

@@ -13,7 +13,10 @@ function project () {
 }
 
 alias cl='cs'
-alias pj='cd ~/Documents/Projects && ls -d *'
+alias pj='cd ~/Documents/Projects && ls -d * && tmux ls'
+alias fun='cd ~/Documents/fun && ls -d * && tmux ls'
+alias rice='cd ~/rice && ls -d *'
+alias vag='vagrant up && gulp'
 alias ed='subl'
 alias host='sudo subl /etc/hosts'
 alias server='python -m SimpleHTTPServer'
@@ -24,6 +27,7 @@ alias chrome='/usr/bin/open -a "/Applications/Google Chrome.app"'
 alias npmlist='npm list -g --depth=0'
 alias 1='project'
 alias composer='composer.phar'
+alias go='tmux attach -t'
 
 # Git commands
 alias gs='git status '
@@ -31,9 +35,9 @@ alias ga='git add '
 alias gb='git branch -v'
 alias gc='git commit'
 alias gd='git diff'
-alias go='git checkout '
 alias gk='gitk --all&'
 alias gx='gitx --all'
+alias sourcetree='open -a SourceTree'
 
 alias gm='git mg'
 alias mg='gm'
@@ -44,6 +48,18 @@ alias get='git '
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
+export FIGNORE=.DS_Store
+
+export DOCKER_TLS_VERIFY="1"
+export DOCKER_HOST="tcp://192.168.99.100:2376"
+export DOCKER_CERT_PATH="/Users/rdelrio/.docker/machine/machines/default"
+export DOCKER_MACHINE_NAME="default"
+#eval $(docker-machine env default)
+
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib"
+export CUDA_HOME=/usr/local/cuda
+
+eval "$(thefuck --alias)"
 
 function cheat () {
 	git push
@@ -57,6 +73,27 @@ function cheat () {
 	else
 		git merge --no-ff @{-1}
 	fi
+}
+
+function gt () {
+	cd ~/Documents/Projects
+	cd $1
+	ls -d *
+	if [ "$1" ]; then
+		gs
+	fi
+}
+
+function pane () {
+	pwd=$(pwd)
+	osascript -e 'tell application "System Events" to key code 2 using {shift down, command down}'
+	tell application "iTerm"
+		delay 6
+		write text "cd $pwd"
+	end tell
+	osascript -e 'tell application "System Events" to keystroke "[" using {command down}'
+	$1
+	osascript -e 'tell application "System Events" to keystroke "[" using {command down}'
 }
 
 function deploy () {
@@ -76,12 +113,29 @@ function undo () {
 }
 
 function _update_ps1() {
-	export PS1="$(~/powerline-shell.py --cwd-only $? 2> /dev/null)"
+    PS1="$(~/powerline-shell.py $? 2> /dev/null --cwd-mode dironly --cwd-max-depth 1)"
 }
 
-export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+if [ "$TERM" != "linux" ]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
 
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+##
+# Your previous /Users/rdelrio/.bash_profile file was backed up as /Users/rdelrio/.bash_profile.macports-saved_2016-07-21_at_18:27:17
+##
+
+# MacPorts Installer addition on 2016-07-21_at_18:27:17: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+# MacPorts Installer addition on 2017-01-06_at_10:26:51: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+

@@ -4,5 +4,6 @@ function _update_ps1() {
 
 export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH=/usr/local/php5/bin:$PATH
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

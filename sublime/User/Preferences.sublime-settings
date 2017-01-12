@@ -98,10 +98,11 @@
 		"/Users/rdelrio/Documents/Projects/great-american-cookies/vendor/vlucas",
 		"/Users/rdelrio/Documents/Projects/great-american-cookies/www/app/uploads/2015"
 	],
-	"font_size": 11,
+	"font_size": 12,
 	"ignored_packages":
 	[
 		"Color Highlighter",
+		"Emmet Style Reflector",
 		"Gitignored File Excluder",
 		"Vintage"
 	],
