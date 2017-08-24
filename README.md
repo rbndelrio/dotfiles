@@ -24,7 +24,7 @@ To do before wrecking of self.
 * VirtualBox
 * Vagrant
 * Sequel Pro
-* Docker
+* Docker for Mac (Beta)
 * Kitematic
 * Postgres/PSequel
 * VNC Viewer
@@ -44,7 +44,7 @@ To do before wrecking of self.
 * iTerm 2
 * Powerline*
 * Sublime Text 3
-* Visual Studio Code
+* Visual Studio Code (main)
 * Pushbullet
 * 1Password
 * Slack

@@ -1,6 +1,6 @@
 	#editor = code -n -w
 [core]
-	editor = subl -n -w
+	editor = nvim
 	excludesfile = /Users/rdelrio/.gitignore_global
 [push]
 	default = current

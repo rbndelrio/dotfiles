@@ -14,7 +14,10 @@
 		"Color Highlighter",
 		"CSS3",
 		"CSScomb",
+		"DashDoc",
 		"Django",
+		"Dockerfile Syntax Highlighting",
+		"EditorConfig",
 		"Emmet",
 		"Emmet Css Snippets",
 		"Emmet Style Reflector",
@@ -41,6 +44,7 @@
 		"PHP-Twig",
 		"Pretty JSON",
 		"Pug",
+		"Sass",
 		"SASS Build",
 		"SASS Snippets",
 		"SassBeautify",
@@ -49,13 +53,11 @@
 		"SublimeLinter",
 		"SublimeLinter-jshint",
 		"Super Calculator",
-		"Syntax Highlighting for Sass",
 		"Text Pastry",
 		"Theme - Afterglow",
 		"Theme - Spacegray",
 		"Twig",
 		"TypeScript",
-		"Vue Syntax Highlight",
-		"Vuejs Complete Package"
+		"Vuejs Snippets"
 	]
 }

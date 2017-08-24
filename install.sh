@@ -10,15 +10,22 @@ ln -s "$PWD/profile/profile" ~/.profile
 ln -s "$PWD/tmux/tmux.conf" ~/.tmux.conf
 ln -s "$PWD/git/gitconfig" ~/.gitconfig
 ln -s "$PWD/merc/hgrc" ~/.hgrc
+# ln -s "$PWD/vscode/" ~/Library/Application\ Support/Code/User/
 
 
 #Bin
 
 echo Symlinking bin files...
-rm -rf ~/bin/git-deploy ~/bin/subl
-ln -s "$PWD/git/git-deploy" ~/bin/git-deploy
-ln -s "$PWD/git/git-cleanup" ~/bin/git-cleanup
-ln -s "$PWD/bin/subl" ~/bin/subl
+# rm -rf ~/bin/git-deploy ~/bin/subl
+# ln -s "$PWD/git/git-deploy" ~/bin/git-deploy
+# ln -s "$PWD/git/git-cleanup" ~/bin/git-cleanup
+# ln -s "$PWD/bin/subl" ~/bin/subl
+rm ~/bin/git-deploy
+rm ~/bin/git-cleanup
+rm ~/bin/subl
+cp ./git/git-deploy ~/bin/git-deploy
+cp ./git/git-cleanup ~/bin/git-cleanup
+cp ./bin/subl ~/bin/subl
 
 
 # Sublime Text

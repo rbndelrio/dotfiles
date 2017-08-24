@@ -491,6 +491,8 @@
 	<integer>0</integer>
 	<key>HotkeyCode</key>
 	<integer>0</integer>
+	<key>HotkeyMigratedFromSingleToMulti</key>
+	<true/>
 	<key>HotkeyModifiers</key>
 	<integer>0</integer>
 	<key>IRMemory</key>
@@ -552,23 +554,23 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>2192 699 1018 270 1920 574 1920 1200 </string>
+	<string>1816 190 1018 136 1680 -150 1920 1178 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>772 699 606 456 0 0 1920 1177 </string>
 	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
 	<string>1027 320 616 174 0 0 1920 1177 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>2398 188 918 381 1680 -150 1920 1178 </string>
+	<string>50 215 796 473 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>962 52 955 1121 0 0 1920 1178 </string>
+	<string>388 48 1277 980 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>2017 49 906 731 1680 -150 1920 1178 </string>
+	<string>2626 991 570 427 1680 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>962 73 955 1099 0 0 1920 1177 </string>
+	<string>842 49 836 971 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>833 302 1018 1115 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>1681 -375 1277 1395 1680 -390 2560 1417 </string>
+	<string>1172 47 745 1131 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
 	<string>208 118 570 426 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
@@ -2139,7 +2141,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-01-05T15:52:38Z</date>
+	<date>2017-07-21T21:51:45Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -2189,7 +2191,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.13</string>
+	<string>3.1.beta.5</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
