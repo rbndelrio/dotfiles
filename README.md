@@ -72,3 +72,4 @@ To do before wrecking of self.
 * Flux
 * BetterTouchTool
 * cd to.app
+* SpotMenu
