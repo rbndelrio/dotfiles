@@ -18,18 +18,23 @@ To do before wrecking of self.
 
 * SSH keys
 * Xcode
-* Ruby
 * Homebrew
-* Python
+* Ruby + rvm
+* Python + pip
 * VirtualBox
 * Vagrant
 * Sequel Pro
+* FileZilla
+* CyberDuck
 * Docker for Mac (Beta)
 * Kitematic
-* Postgres/PSequel
+* Postgres.app + Postico
+* Spotify
+* Sonos
 * VNC Viewer
 * Node
- * npm-check-updates
+ * nvm
+ * ngrok
  * yarn
  * gulp
  * browsersync
@@ -42,12 +47,15 @@ To do before wrecking of self.
 ### Workflow Applications
 
 * iTerm 2
+* Tmux + reattach-to-user-namespace
 * Powerline*
 * Sublime Text 3
 * Visual Studio Code (main)
 * Pushbullet
 * 1Password
 * Slack
+* VLC/MPV
+* Livestreamer
 * Miro Video Converter
 * Handbrake
 * ImageOptim

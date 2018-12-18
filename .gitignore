@@ -16,3 +16,5 @@ Package Control.sublime-settings
 Package Control.system-ca-bundle
 
 vscode/workspaceStorage
+
+.DS_Store
