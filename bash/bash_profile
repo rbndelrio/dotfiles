@@ -9,16 +9,17 @@ function cs () {
 }
 
 function project () {
-	open ~/Documents/Projects/1/$1
+	open ~/Projects/1/$1
 }
 
 alias cl='cs'
-alias pj='cd ~/Documents/Projects && ls -d * && tmux ls'
-alias fun='cd ~/Documents/fun && ls -d * && tmux ls'
+alias pj='cd ~/Projects && ls -d *'
+alias fun='cd ~/Documents/fun && ls -d *'
 alias rice='cd ~/rice && ls -d *'
 alias vag='vagrant up && gulp'
 alias ed='nvim'
-alias host='sudo code /etc/hosts -r --user-data-dir="~/.vscode-root"'
+# alias host='sudo code /etc/hosts -r --user-data-dir="~/.vscode-root"'
+alias host='sudo nvim /etc/hosts'
 alias server='python -m SimpleHTTPServer'
 alias status='git status -sb'
 alias git-merge='git merge --no-ff'
@@ -26,10 +27,11 @@ alias fetch='git fetch && git branch -v'
 alias chrome='/usr/bin/open -a "/Applications/Google Chrome.app"'
 alias npmlist='npm list -g --depth=0'
 alias 1='project'
-alias composer='composer.phar'
-alias go='tmux attach -t'
+# alias composer='composer.phar'
+# alias go='tmux attach -t'
 alias dockerip="docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'"
-alias webcam='sudo killall AppleCameraAssistant; sudo killall VDCAssistant'
+alias webcam-fix='sudo killall AppleCameraAssistant; sudo killall VDCAssistant'
+alias docker-purge='docker stop $(docker ps -aq)'
 
 # Git commands
 alias gs='git status '
@@ -46,6 +48,9 @@ alias mg='gm'
 
 alias got='git '
 alias get='git '
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
@@ -81,7 +86,7 @@ function cheat () {
 }
 
 function gt () {
-	cd ~/Documents/Projects
+	cd ~/Projects
 	cd $1
 	ls -d *
 	if [ "$1" ]; then
@@ -117,18 +122,16 @@ function undo () {
 	git reset --hard HEAD~1
 }
 
-function _update_ps1() {
-    PS1="$(~/powerline-shell.py $? 2> /dev/null --cwd-mode dironly --cwd-max-depth 1)"
+function linestat () {
+	arg=$1 || "1 day"
+	git log --shortstat --since "$arg ago"|\
+	grep "files changed" |\
+	awk '{files+=$1; inserted+=$4; deleted+=$6} END {print "Files Changed", files, "Lines Inserted:", inserted, "Lines Deleted:", deleted}'
 }
-
-if [ "$TERM" != "linux" ]; then
-    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-fi
 
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
-# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 source "$HOME/.profile"
 
@@ -140,15 +143,19 @@ source "$HOME/.profile"
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
 
-
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+# test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 # MacPorts Installer addition on 2017-01-06_at_10:26:51: adding an appropriate PATH variable for use with MacPorts.
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
-
 
 eval "$(docker-machine env -u)"
 unset DOCKER_TLS_VERIFY
 unset DOCKER_HOST
 unset DOCKER_CERT_PATH
 unset DOCKER_MACHINE_NAME
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# Use pyenv instead of homebrew
+eval "$(pyenv init -)"
+export PATH="$PATH:/Applications/DevDesktop/tools"
