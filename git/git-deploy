@@ -1,4 +1,5 @@
 #!/bin/bash
+
 git push $1 +HEAD:master
-git fetch $1
+#git fetch $1
 git push origin --tags
