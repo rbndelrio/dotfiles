@@ -1,12 +1,12 @@
 	#editor = code -n -w
 [core]
 	editor = nvim
-	excludesfile = /Users/rdelrio/.gitignore_global
+	excludesfile = /Users/rubendelrio/.gitignore_global
 [push]
 	default = current
 [user]
 	name = Ruben Del Rio
-	email = rdelrio@pushhere.com
+	email = rdelrio@findsomewinmore.com
 [web]
 	browser = google-chrome
 [instaweb]
@@ -34,9 +34,10 @@
 	autoupdate = true
 # Lets git remember how merge conflicts are solved
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
 	required = true
+	process = git-lfs filter-process
 
 
 [alias]
@@ -60,4 +61,6 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [commit]
-	template = /Users/rdelrio/.stCommitMsg
+	template = /Users/rubendelrio/.stCommitMsg
+[http]
+	postBuffer = 157286400
