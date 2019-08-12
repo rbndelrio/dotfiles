@@ -30,7 +30,7 @@
 	short = true
 	branch = false #disabled because powerline already shows this
 [rerere]
-	enabled = true
+	enabled = 1
 	autoupdate = true
 # Lets git remember how merge conflicts are solved
 [filter "lfs"]

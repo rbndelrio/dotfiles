@@ -32,6 +32,7 @@ alias 1='project'
 alias dockerip="docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'"
 alias webcam-fix='sudo killall AppleCameraAssistant; sudo killall VDCAssistant'
 alias docker-purge='docker stop $(docker ps -aq)'
+alias dokku='~/.dokku/contrib/dokku_client.sh'
 
 # Git commands
 alias gs='git status '

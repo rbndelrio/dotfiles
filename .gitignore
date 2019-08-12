@@ -9,6 +9,7 @@
 *.tmPreferences.cache
 *.stTheme.cache
 *.sublime-workspace
+*/.git
 
 Package Control.sublime-settings
 Package Control.merged-ca-bundle
